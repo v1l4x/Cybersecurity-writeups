@@ -45,9 +45,9 @@ Después realicé un segundo escaneo para identificar servicios y versiones:
 `nmap -sCV -p 22,80,443 10.80.173.103`
 
 
-Aquí vi algunas versiones antiguas con posibles vulnerabilidades, pero antes de intentar explotar nada decidí seguir un enfoque más básico: mirar la web.
+![Escaneo de puertos con nmap](Imágenes/nmap.png)
 
-<img width="1146" height="441" alt="Screenshot_2025-12-26_00_48_32 1" src="https://github.com/user-attachments/assets/2d3aa32e-1361-4762-aa33-c8823e51b710" />
+Aquí vi algunas versiones antiguas con posibles vulnerabilidades, pero antes de intentar explotar nada decidí seguir un enfoque más básico: mirar la web.
 
 ---
 🌐 Enumeración web
