@@ -15,7 +15,10 @@ La máquina se basa prácticamente al 100 % en **reconocimiento y enumeración**
 
 Lo primero que hago siempre es un escaneo completo de puertos con nmap, para tener una visión clara de la superficie de ataque.
 
-`nmap -p- -sS --min-rate 5000 -Pn -n 10.80.173.103 -oG ports`
+```bash
+nmap -p- -sS --min-rate 5000 -Pn -n 10.80.173.103 -oG ports
+
+```
 
 
 Uso estas opciones porque:
@@ -41,7 +44,9 @@ El escaneo mostró tres puertos abiertos:
 
 Después realicé un segundo escaneo para identificar servicios y versiones:
 
-`nmap -sCV -p 22,80,443 10.80.173.103`
+```bash
+nmap -sCV -p 22,80,443 10.80.173.103
+```
 
 
 ![Escaneo de puertos con nmap](Imágenes/nmap.png)
