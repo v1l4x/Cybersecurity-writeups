@@ -37,7 +37,7 @@ El escaneo muestra dos puertos abiertos:
 
 **8000/tcp** → Servicio HTTP (puerto alternativo)
 
-<img width="1512" height="835" alt="Captura de pantalla 2025-12-26 191209" src="https://github.com/user-attachments/assets/8430caae-389e-40d3-ae50-a2b7f2eecfc3" />
+![Escaneo de puertos con nmap](Imágenes/nmap.png)
 
 El puerto 8000 suele utilizarse para aplicaciones web en desarrollo o servicios personalizados, así que decidí empezar por ahí.
 
@@ -45,7 +45,7 @@ El puerto 8000 suele utilizarse para aplicaciones web en desarrollo o servicios 
 
 Al acceder a la web a través del navegador (http://<IP>:8000), el servidor devuelve un mensaje indicando que intente conectarme de una forma “más básica”.
 
-<img width="1428" height="738" alt="Captura de pantalla 2025-12-26 192932" src="https://github.com/user-attachments/assets/5a07d97b-2833-4b0d-b4ce-3d53e4e3e872" />
+![Página web en python](Imágenes/web.png)
 
 Esto, junto con la descripción de la máquina, me hizo sospechar que no se trataba de una web convencional, sino de un servicio que esperaba entrada directa por socket.
 
