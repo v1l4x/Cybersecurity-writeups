@@ -1,6 +1,6 @@
 
 # 🧠 Jack — Writeup
-Máquina: Fácil / Media
+Máquina: "Difícil"
 
 Tiempo estimado: 90 minutos
 
