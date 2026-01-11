@@ -55,13 +55,20 @@ stty raw -echo; fg
 reset
 ```
 # 📁 Movimiento Lateral: Usuario Jack
-En el directorio /var/backups, localizamos un archivo comprimido que contenía una copia del home. Al inspeccionarlo, encontramos la clave privada SSH de Jack:
+
+![Nombre descriptivo de la imagen](imágenes/Screenshot_2026-01-11_17_41_13.png)
+
+En el directorio /var/backups, localizamos un archivo comprimido que contenía una copia del home. Al inspeccionarlo, encontramos la clave privada SSH de Jack: 
+
+![Nombre descriptivo de la imagesdfn](imágenes/Screenshot_2026-01-11_17_43_51cp.png)
 
 Descargamos el archivo a nuestra máquina.
 
 Extrajimos la clave id_rsa.
 
 Conexión exitosa: ssh -i id_rsa jack@jack.thm
+
+![Nombre descriptivo de la imagesdfn](imágenes/Screenshot_2026-01-11_17_43_51.png)
 
 # 🔑 Escalada de Privilegios: Python Library Hijacking
 Una vez como el usuario jack, descubrimos que pertenecíamos al grupo family. Al buscar archivos escribibles por este grupo, encontramos algo crítico:
@@ -86,6 +93,9 @@ ls -l /bin/bash
 # Resultado: -rwsr-xr-x
 ```
 🏁 Obtención de Root
+
+![Nombre descriptivo de la imagesdfn](imágenes/Screenshot_2026-01-11_18_06_46.png)
+
 Ejecutamos la shell con privilegios persistentes:
 ```bash
 /bin/bash -p
